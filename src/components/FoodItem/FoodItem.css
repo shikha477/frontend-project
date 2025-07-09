@@ -48,6 +48,11 @@
     cursor:pointer;
     border-radius: 50%;
 }
+.food-item-img-container .add:hover{
+    border-radius: 50% ;
+    border:2px solid tomato;
+    
+}
 .food-item-counter{
     position: absolute;
     bottom:15px;

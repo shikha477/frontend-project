@@ -34,9 +34,15 @@
     font-size: max(1vw,13px);
     border-radius: 50px;
 }
-@media (max-width:1050px){
+/* @media (max-width:1050px){
     .header-contents{
         max-width: 45px;
+    }
+    .header-contents h2{
+        font-size:max(2vw,25px);
+    }
+    .header-contents p{
+        font-size:0.8vw;;
     }
 }
 
@@ -51,4 +57,7 @@
     .header-contents button{
         padding:2vw 4vw;
     }
-}
+    .header-cintents h2{
+        font-size:max(6vw,30px);
+    }
+} */
