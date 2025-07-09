@@ -6,7 +6,16 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const[cartItems,setCartItems]=useState({});
+    const  getDefaultCart =()=>{
+        const savedCart =localStorage.getItem('cartItems');
+        return savedCart ? JSON.parse(savedCart):{};
+    };
+
+    const[cartItems,setCartItems]=useState(getDefaultCart());
+
+    useEffect(()=>{
+        localStorage.setItem('cartItems',JSON.stringify(cartItems));
+    },[cartItems])
 
     const addToCart =(itemId) => {
         if(!cartItems[itemId]){
